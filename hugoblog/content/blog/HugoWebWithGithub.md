@@ -81,7 +81,21 @@ git push origin main
 ```  
 * * *  
 
-#### 7. **開發架設指令**  
+#### 7. **Push源專案(A)到github**  
+###### cd到(A), 如果themes主題會有問題可以移除該themes/中的.git:  
+```bash
+cd themes
+rm hugo-creative-portfolio-theme/.git
+選擇全部皆是
+```  
+##### 此時git 會跳出fatal的錯誤 => 所以繼續以下步驟
+1. 將/themes/hugo-creative-portfolio-theme 整個資料夾移到(A)專案外面
+2. 先做一次commit
+3. 把外面移動的/hugo-creative-portfolio-theme移回(A)的themes/中
+4. 可以正常commit了
+* * *  
+
+#### 其他**開發架設指令**  
 ###### 架設專案
 ```bash
 hugo server
