@@ -1,0 +1,8 @@
+[submodule "hugoblog/jackliangtw.github.io"]
+	path = hugoblog/jackliangtw.github.io
+	url = https://github.com/JackLiangTW/jackliangtw.github.io.git
+	branch = main
+[submodule "hugoblog/public"]
+	path = hugoblog/public
+	url = https://github.com/JackLiangTW/jackliangtw.github.io.git
+	branch = main

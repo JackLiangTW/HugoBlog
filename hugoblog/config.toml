@@ -1,0 +1,37 @@
+baseURL = 'https://jackliangtw.github.io/'
+languageCode = 'en-us'
+title = "Jack Liang's portfolio and blog"
+theme = 'hugo-creative-portfolio-theme'
+
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "pink"
+  description = "Jack Liang's portfolio and blog"
+  copyright = "&copy;2023 Jack Liang"
+  sidebarAbout = [
+    "I am a soft engineer with more than 5 years of experience.",
+    "Lived in Taiwan."
+  ]
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Portfolio"
+  url = "portfolio/"
+  home = true
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Blog"
+  url = "blog/"
+
+  [params.social]
+  email         = "k8865432110@gmail.com"
+  github        = "https://github.com/JackLiangTW"
+  gitlab        = "https://gitlab.com/JackLiangTW"
+  leetcode      = "https://leetcode.com/JackLiangTW/"
+  codepen       = "https://codepen.io/jackliangtw/pens/showcase"
