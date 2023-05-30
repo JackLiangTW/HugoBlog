@@ -150,14 +150,24 @@
 
   function inintRnderCategoryTagsCount(){ //- 計算各Tag總數 & 渲染
     let tagsCount = {};
+    let renderBtns = false; //- 是否要render filter buttons
     allPanel.forEach(function(ele) {
       ele.getAttribute('tagData').split(",").forEach(tg=>{
+        if(!tg){
+          return;
+        }
+        renderBtns = true;
         if(tagsCount.hasOwnProperty(tg)){tagsCount[tg] += 1;}
         else{
           tagsCount[tg] = 1;
         }
       })
     });
+
+    if(!renderBtns){
+      TagsCategoryButtons.style.display='none';
+      return;
+    }
     
     for (let _key in tagsCount) {
       var button = document.createElement('button');
