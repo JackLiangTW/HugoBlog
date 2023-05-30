@@ -2,7 +2,7 @@
     <div class="clearButtons"></div>
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
-        <div class="row">
+        <div class="row d-flex">
           {{ range .Data.Pages }}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item" tagData="{{.Params.tags}}">
                   <div class="box-masonry">
@@ -108,6 +108,7 @@
     });
     
     button.classList.add('btn','btn-primary');
+    button.style.margin = '0 10px 10px 0';
     button.setAttribute('type', "button");
     button.setAttribute('tag', tagName);
     clearBtnDiv.appendChild(button);
@@ -128,6 +129,7 @@
       }
       ele.style.display = isShow ? "block":"none";
     });
+    $(this)[0].masonry(); //- Trigger瀑布流排版 ReRender
   }
 
 </script>
