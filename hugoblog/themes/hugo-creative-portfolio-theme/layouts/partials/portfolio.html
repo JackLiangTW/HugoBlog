@@ -1,6 +1,7 @@
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    <div class="clearButtons"></div>
     {{ partial "mobile_nav_toggle.html" . }}
+    <div class="clearButtons"></div>
+    <div class="TagsCategoryButtons" style="margin-bottom: 20px;padding: 12px 5px;border-top: 2px solid firebrick;"></div>
     <div class="grid">
         <div class="row d-flex">
           {{ range .Data.Pages }}
@@ -40,7 +41,7 @@
                             {{ if eq (mod $index 4) 0 }}
                             <button type="button" class="chooseTag btn-sm btn btn-info" style="margin-top: 8px ;" tag="{{ $element }}">
                             {{ else if eq (mod $index 4) 1 }}
-                            <button type="button" class="chooseTag btn-sm btn btn-primary" style="margin-top: 8px ;" tag="{{ $element }}">
+                            <button type="button" class="chooseTag btn-sm btn btn-success" style="margin-top: 8px ;" tag="{{ $element }}">
                             {{ else if eq (mod $index 4) 2 }}
                             <button type="button" class="chooseTag btn-sm btn btn-warning" style="margin-top: 8px ;" tag="{{ $element }}">
                             {{ else }}
@@ -76,21 +77,36 @@
   const btnsFilter = document.querySelectorAll('button.chooseTag');
   const allPanel = document.querySelectorAll('div.masonry-item');
   const clearBtnDiv = document.getElementsByClassName('clearButtons')[0];
+  const TagsCategoryButtons = document.getElementsByClassName('TagsCategoryButtons')[0];
+  
 
   btnsFilter.forEach(function(button) { //- Filter加入Tags
     button.addEventListener('click', function() {
       var theTag = button.getAttribute('tag');
-      if(selectedTag==null)selectedTag=[theTag];
-      else if(selectedTag.includes(theTag)){ //- 已加入
-        return;
-      }
-      else{ //- 加入
-        selectedTag.push(theTag);
-      }
-      AddClearButtonRender(theTag);
-      filterRender();
+      FilterAddTag(theTag);
+      // if(selectedTag==null)selectedTag=[theTag];
+      // else if(selectedTag.includes(theTag)){ //- 已加入
+      //   return;
+      // }
+      // else{ //- 加入
+      //   selectedTag.push(theTag);
+      // }
+      // AddClearButtonRender(theTag);
+      // filterRender();
     });
   });
+
+  function FilterAddTag(theTag){ //- 選擇Tag
+    if(selectedTag==null)selectedTag=[theTag];
+    else if(selectedTag.includes(theTag)){ //- 已加入
+      return;
+    }
+    else{ //- 加入
+      selectedTag.push(theTag);
+    }
+    AddClearButtonRender(theTag);
+    filterRender();
+  }
 
   function AddClearButtonRender(tagName){ //- 加上display:none, display:block
     var button = document.createElement('button');
@@ -131,6 +147,33 @@
     });
     $(this)[0].masonry(); //- Trigger瀑布流排版 ReRender
   }
+
+  function inintRnderCategoryTagsCount(){ //- 計算各Tag總數 & 渲染
+    let tagsCount = {};
+    allPanel.forEach(function(ele) {
+      ele.getAttribute('tagData').split(",").forEach(tg=>{
+        if(tagsCount.hasOwnProperty(tg)){tagsCount[tg] += 1;}
+        else{
+          tagsCount[tg] = 1;
+        }
+      })
+    });
+    
+    for (let _key in tagsCount) {
+      var button = document.createElement('button');
+      button.textContent = `${_key}(${tagsCount[_key]>99?"99+":tagsCount[_key]})`;
+      button.addEventListener('click', function() {
+        FilterAddTag(_key);
+      });
+      button.classList.add('btn','btn-primary','btn-sm');
+      button.style.margin = '0 10px 10px 0';
+      button.setAttribute('type', "button");
+      button.setAttribute('tag', _key);
+      TagsCategoryButtons.appendChild(button);
+    }
+  }
+
+  inintRnderCategoryTagsCount();
 
 </script>
 
