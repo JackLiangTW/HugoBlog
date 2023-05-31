@@ -12,19 +12,19 @@ tags = "Hugo,Web"
 [Hugo win10安裝教學](https://youtu.be/N-QRjEJsBRU)
 
 #### 1. **Github新增2個專案:**  
-**(A)** Source code repository / Hugo source code存放 (HugoBlog)  
-**(B)** Production repository / 展示GithubPage (jackliangtw.github.io)  
+> **(A)** Source code repository / Hugo source code存放 (HugoBlog)  
+> **(B)** Production repository / 展示GithubPage (jackliangtw.github.io)  
 * * *  
 
 
 #### 2. **安裝Hugo:**
-win10安裝流程:  
-下載安裝Hugo:[Hugo release](https://github.com/gohugoio/hugo/releases)  
-C槽建立 /hugo/bin 資料夾  
-下載最新版(amd64.zip) [eg: hugo_extended_0.111.3_windows-amd64.zip]  
-解壓縮到 C/hugo/bin/ 當中  
-環境變數Path設定新增: C:\Hugo\bin  
-cmd檢查hugo指令是否成功: hugo version  
+> **win10安裝流程:**  
+> **下載安裝Hugo:[Hugo release](https://github.com/gohugoio/hugo/releases)**  
+> **C槽建立 /hugo/bin 資料夾**  
+> **下載最新版(amd64.zip) [eg: hugo_extended_0.111.3_windows-amd64.zip]**  
+> **解壓縮到 C/hugo/bin/ 當中**  
+> **環境變數Path設定新增: C:\Hugo\bin**  
+> **cmd檢查hugo指令是否成功: hugo version**  
 * * *  
 
 #### 3. **Git clone第一步驟(A),(B)到local端**  
@@ -89,10 +89,10 @@ rm hugo-creative-portfolio-theme/.git
 選擇全部皆是
 ```  
 ##### 此時git 會跳出fatal的錯誤 => 所以繼續以下步驟
-1. 將/themes/hugo-creative-portfolio-theme 整個資料夾移到(A)專案外面
-2. 先做一次commit
-3. 把外面移動的/hugo-creative-portfolio-theme移回(A)的themes/中
-4. 可以正常commit了
+> **1. 將/themes/hugo-creative-portfolio-theme 整個資料夾移到(A)專案外面**  
+> **2. 先做一次commit**  
+> **3. 把外面移動的/hugo-creative-portfolio-theme移回(A)的themes/中**  
+> **4. 可以正常commit了**
 * * *  
 
 #### 其他**開發架設指令**  

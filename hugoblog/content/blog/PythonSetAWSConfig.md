@@ -8,13 +8,13 @@ showmoretile = false
 tags = "AWS,Python"
 +++
 
-cmd指令開啟config參數位置
+#### cmd指令開啟config參數位置
 ```bash
 nano ~/.aws/config
 ```  
 * * *  
 
-設定參數如以下
+#### 設定參數如以下
 ```bash
 region = ap-northeast-1
 output = json

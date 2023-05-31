@@ -36,8 +36,8 @@ await docClient.update(param).promise();
 * * *  
 
 ######  參數說明:
-1. TableName : Dynamodb資料表Table  
-2. Key : 該Table partition key(Id) 或 Secondary Id  
-3. UpdateExpression : 更新參數邏輯, 用下方(4),(5)參數做更新條件  
-4. ExpressionAttributeNames : Table Item參數代寫
-5. ExpressionAttributeValues : 更新值參數代寫
+> **1. TableName : Dynamodb資料表Table**  
+> **2. Key : 該Table partition key(Id) 或 Secondary Id**  
+> **3. UpdateExpression : 更新參數邏輯, 用下方(4),(5)參數做更新條件**  
+> **4. ExpressionAttributeNames : Table Item參數代寫**  
+> **5. ExpressionAttributeValues : 更新值參數代寫**

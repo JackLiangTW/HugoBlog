@@ -17,7 +17,7 @@ tags = "Hugo,Web"
 #### Hugo html相關語法:
 ##### 1. 宣告變數:
 [文件](https://gohugo.io/templates/introduction/#example-2-declaring-a-variable-name-for-an-array-elements-value)  
-{{ $變數 := "某值" }}
+> **{{ $變數 := "某值" }}**  
 ```html
 <!-- 宣告$myVar變數 = .Params.tags.split(',') -->
 {{ $myVar := split .Params.tags "," }}
@@ -26,7 +26,7 @@ tags = "Hugo,Web"
   
 ##### 2. Range陣列資料陣列資料案染:  
 [文件](https://gohugo.io/functions/range/)  
-後面需要{{end}}作結尾包覆
+> **後面需要{{end}}作結尾包覆**  
 ```html
 <!-- 取得index, element寫法 -->
 {{ range $index, $element := $myVar }}
@@ -44,9 +44,9 @@ tags = "Hugo,Web"
 ##### 3. if else判斷式 + eq condition判斷:
 [if文件](https://gohugo.io/templates/introduction/#example-3-if)  
 [eq文件](https://gohugo.io/functions/eq/)  
-{{if}}最後需要{{end}}作結尾包覆  
-eq 相當於JS中 ==, 只是2比對值放在它之後,中間用空格區分  
-($myVar | len) == $myVar.length
+> **{{if}}最後需要{{end}}作結尾包覆**  
+> **eq 相當於JS中 ==, 只是2比對值放在它之後,中間用空格區分**  
+> **($myVar | len) == $myVar.length**  
 ```html
 <!-- 取得index, element寫法 -->
 {{ if eq ($myVar | len) 0 }}
@@ -60,10 +60,10 @@ eq 相當於JS中 ==, 只是2比對值放在它之後,中間用空格區分
 * * *  
 
 ##### 4. len長度: array/dict/string:  
-[文件](https://gohugo.io/functions/len/)  
-{{if}}最後需要{{end}}作結尾包覆  
-eq 相當於JS中 ==, 只是2比對值放在它之後,中間用空格區分  
-($myVar | len) == $myVar.length
+[文件](https://gohugo.io/functions/len/)
+> **{{if}}最後需要{{end}}作結尾包覆**  
+> **eq 相當於JS中 ==, 只是2比對值放在它之後,中間用空格區分**  
+> **($myVar | len) == $myVar.length**  
 ```html
 <!-- String 2 -->
 {{ "ab" | len }}

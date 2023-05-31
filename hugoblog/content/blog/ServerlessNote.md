@@ -39,15 +39,13 @@ serverless create --template aws-nodejs --path myNewProjectName
 ```  
 * * *  
 
-3.建置node.js環境
-cd myNewProjectName
-npm init
 
-#### 3. node.js專案設定:  
+#### 3. node.js專案設定(install裝需要package):  
 ```bash
 cd myNewProjectName
 npm init
 npm install 
+npm install some-need-lib
 ```  
 * * *  
 
