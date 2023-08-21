@@ -11,3 +11,8 @@ git clone https://github.com/JackLiangTW/HugoBlog.git
 git submodule add -b main https://github.com/JackLiangTW/jackliangtw.github.io.git public
 ```  
 
+##### 3. (可能要)設定submodule:  
+```bash
+hugo -t hugo-creative-portfolio-theme
+```
+

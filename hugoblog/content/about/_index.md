@@ -21,11 +21,15 @@ title = "關於我About me"
 ###### 2019~2020 椅斯拉:
 [Amymusic](https://jackliangtw.github.io/portfolio/amymusic/)  
 > ###### 獨自開發Youtube影音分享網站-Amymusic  
-> ###### `相關技術使用`:Node.js express / Mongodb / GCP AppEngine / Youtube Embed API / MySQL  
+> ###### `相關技術使用`:Node.js express / Mongodb / GCP AppEngine / Youtube Embed API / MySQL / Puppeteer爬蟲  
+> ###### `聊天室功能-分享平台上自訂歌單`  
+> ###### `YT資料爬蟲-及時爬取關鍵字聯想 + YT搜尋影片結果爬取`  
+> ###### `Youtube Embed API前端應用 - Embed YT Video`  
 * * *  
 
 ###### 2021.2~2021.10 易控智慧生活:
 [Ezcon務業系統](https://jackliangtw.github.io/portfolio/ezcon/)  
+> ###### 負責架構與開發整個物業管理平台  
 > ###### `相關技術使用`:Node.js feathers.js框架 / React.js / Docker / pm2 / Mongodb  
 > ###### `住戶及管理員權限系統:`可以自行創立權限群組並設定可以使用哪些頁面權限  
 > ###### `社區通知系統:`(訪客,包裹領取,會議公告通知, 公設預約...) Firebase通知用戶App  
