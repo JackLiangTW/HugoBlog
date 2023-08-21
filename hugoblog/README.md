@@ -11,7 +11,7 @@ git clone https://github.com/JackLiangTW/HugoBlog.git
 git submodule add -b main https://github.com/JackLiangTW/jackliangtw.github.io.git public
 ```  
 
-##### 3. (可能要)設定submodule:  
+##### 4. buid指令(root在README.md同一層):  
 ```bash
 hugo -t hugo-creative-portfolio-theme
 ```
