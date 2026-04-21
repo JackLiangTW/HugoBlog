@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-date = "2023-05-05T28:25:22+05:30"
+date = "2023-05-05T22:25:22+05:30"
 title = "Node.js/AWS Dynamodb UpdateItem"
 weight = 1
 showmoretile = false

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h3>{{ .Title }}</h3>
+         {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

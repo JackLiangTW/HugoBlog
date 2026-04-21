@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-date = "2023-05-05T31:25:22+05:30"
+date = "2023-05-05T23:25:22+05:30"
 title = "AWS EC2專案複製架設範例(Dokcer)"
 weight = 1
 showmoretile = false

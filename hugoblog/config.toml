@@ -26,6 +26,10 @@ theme = 'hugo-creative-portfolio-theme'
   url = "about/"
 
   [[params.navlinks]]
+  name = "About (EN)"
+  url = "about-en/"
+
+  [[params.navlinks]]
   name = "Blog"
   url = "blog/"
 
@@ -33,5 +37,5 @@ theme = 'hugo-creative-portfolio-theme'
   email         = "k8865432110@gmail.com"
   github        = "https://github.com/JackLiangTW"
   gitlab        = "https://gitlab.com/JackLiangTW"
-  leetcode      = "https://leetcode.com/JackLiangTW/"
+  leetcode      = "https://leetcode.com/u/k8865432110/"
   codepen       = "https://codepen.io/jackliangtw/pens/showcase"

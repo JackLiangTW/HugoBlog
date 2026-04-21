@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-date = "2023-05-31T29:25:22+14:30"
+date = "2023-05-31T23:25:22+05:30"
 title = "Python Boto3 ApiGateway刪除/列出"
 weight = 1
 showmoretile = false

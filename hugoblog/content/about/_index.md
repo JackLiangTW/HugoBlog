@@ -1,5 +1,5 @@
 +++
-date = "20232-05T21:05:33+05:30"
+date = "2023-05-02T21:05:33+05:30"
 title = "關於我About me"
 +++
 
@@ -40,7 +40,7 @@ title = "關於我About me"
 > ###### `BA系統:`與整合好控制家電server做串接,使務業平台可以控制該住戶家電,如:電燈,窗簾開關  
 * * *  
 
-###### 2021.11~Now 宏達國際電子:
+###### 2021.11~2023.8.7 宏達國際電子:
 > ###### `使用AWS相關技能:` EC2, Lambda, Dynamodb, S3, Route53, ElasticCache, CloudFront等。  
 > ###### `Python相關技能:` Python資料結構運用,Python AWS lib Boto3使用  
 > ###### Unity C#串接API接口  
@@ -53,6 +53,15 @@ title = "關於我About me"
 > ###### `寶可夢系統 - 資料蒐集:`使用Google-Map-API蒐集全台灣便利商店全部資料  
 > ###### `寶可夢系統 - 位置判斷:`將上方蒐集資料整理至Dynamodb,建置index:經緯度至小數點第3位方便找尋鄰近找尋座標
 > ###### `寶可夢系統 - 商店點位查詢:`使用範圍九宮格演算法,先找出以client船入圍中心的九宮格再查詢資料表  
+* * *  
+
+###### 2023.8.15~Now 勝海科技:
+> ###### `相關技術使用`:Jenkins / C# abp.io / Nest.js / Redis / RabbitMq / MySQL / ClickHouse / Angular / Vibe-coding  
+> ###### `彩票自動投注系統:`第三方平台介接 (Factory Pattern 封裝多家 API)、Redis Queue 驅動的 Bet Worker、多層快取 + 預刷賠率、狀態機管理掛機任務  
+> ###### `三方金流串接:`支付通道整合、訂單歸檔到 ClickHouse、Unique Index migration 避免重複下單  
+> ###### `DevOps:`Jenkins pipeline 自動部署 (rsync + ssh + docker-compose)、pm2 reload 平滑更新  
+> ###### `AI 協作工作流 (Vibe-coding):`運用 Claude Code + MCP Server + Superpowers skills 加速開發與重構  
+* * *  
 
 ###### 我希望自己能更提升自己的技能, 不同的程式語言,的專案架,資料庫設計,... 尤其在這個資訊爆發的年代。  
 

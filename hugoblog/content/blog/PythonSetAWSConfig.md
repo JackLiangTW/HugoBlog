@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-date = "2023-05-05T28:25:22+05:30"
+date = "2023-05-05T22:25:22+05:30"
 title = "Python設定AWS金鑰"
 weight = 1
 showmoretile = false

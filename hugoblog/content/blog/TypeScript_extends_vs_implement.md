@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-date = "2023-08-20T29:25:22+05:30"
+date = "2023-08-20T23:25:22+05:30"
 title = "TypeScript:Extends vs implements"
 weight = 1
 showmoretile = false
